@@ -28,5 +28,5 @@ jobs:
           push: true
           build-args: |
             
-          tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}
-          file: docker-compose.yml
+          tags: ${{ secrets.ACR_ENDPOINT }}/reactpy:latest
+          file: ./docker-compose.yml
